@@ -1,0 +1,7 @@
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Dlls\Reader.dll
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Dlls\Reader.pdb
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Reader\obj\Debug\Reader.csproj.AssemblyReference.cache
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Reader\obj\Debug\Reader.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Reader\obj\Debug\Reader.csproj.CopyComplete
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Reader\obj\Debug\Reader.dll
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Reader\obj\Debug\Reader.pdb

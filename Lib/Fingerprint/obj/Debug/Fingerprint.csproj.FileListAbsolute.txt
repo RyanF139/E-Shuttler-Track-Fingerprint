@@ -1,0 +1,8 @@
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Lib\Fingerprint\obj\Debug\Fingerprint.csproj.AssemblyReference.cache
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Lib\Fingerprint\obj\Debug\Fingerprint.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Lib\Fingerprint\bin\Debug\Fingerprint.dll
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Lib\Fingerprint\bin\Debug\Fingerprint.pdb
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Lib\Fingerprint\bin\Debug\libzkfpcsharp.dll
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Lib\Fingerprint\obj\Debug\Fingerprint.csproj.CopyComplete
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Lib\Fingerprint\obj\Debug\Fingerprint.dll
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01 1920 x 1080\E-ShuttleTrackFingerprint-master\Lib\Fingerprint\obj\Debug\Fingerprint.pdb
