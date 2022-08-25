@@ -586,11 +586,12 @@ namespace Track_ShuttleRun
 
             if (passedInArgs.Length > 1)
             {
-                idTestor = passedInArgs[1];
-                namaTestor = passedInArgs[2];
-                seleksiID = passedInArgs[3];
+                idTestor = passedInArgs[1];                
+                seleksiID = passedInArgs[2];
+                namaTestor = passedInArgs[3];
                 //MessageBox.Show(idTestor);
             }
+           
 
             //MessageBox.Show(seleksiID);
 
@@ -628,7 +629,7 @@ namespace Track_ShuttleRun
             RefreshComPorts();
 
             cmbBaudrate.SelectedIndex = 1; // 115200
-            ipIpServer.IpAddressStr = "192.168.22.205";//System.Configuration.ConfigurationManager.AppSettings["IpRfidReader"];
+            ipIpServer.IpAddressStr = System.Configuration.ConfigurationManager.AppSettings["IpRfidReader"];
 
             // Console.WriteLine(ipIpServer.IpAddressStr);
 
@@ -4910,6 +4911,36 @@ namespace Track_ShuttleRun
             }
         }
 
+        public void PlaySoundStart()
+        {
+            var myPlayer = new System.Media.SoundPlayer();
+            string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
+            // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\countdown shuttle run.wav";
+            myPlayer.Play();
+
+        }
+
+        public void PlaySoundFinish()
+        {
+            var myPlayer = new System.Media.SoundPlayer();
+            string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
+            // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\Finish.wav";
+            myPlayer.Play();
+        }
+
+        public void PlaySoundCounter()
+        {
+            var myPlayer = new System.Media.SoundPlayer();
+            string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
+            // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\counting shuttle run.wav";
+            myPlayer.Play();
+
+        }
+
+
         private void FastInventory_Click(object sender, EventArgs e)
         {
 
@@ -4978,9 +5009,13 @@ namespace Track_ShuttleRun
                         RefreshInventoryInfo();
                         cmdFastInventorySend(useAntG1);
                     }
+
+                    showMessage("Track Siap !!", Color.FromArgb(243, 246, 249));
+                    PlaySoundStart();
                     startInventoryTime = DateTime.Now;
                     dispatcherTimer.Start();
                     readratePerSecond.Start();
+                    
                 }
                 catch (Exception ex)
                 {
@@ -6374,11 +6409,15 @@ namespace Track_ShuttleRun
                                             showMessage("Putaran 1", Color.FromArgb(243, 246, 249));
                                             Label_JumlahPutaran.Text = "1";
 
+                                            
+
 
                                             string History1 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                             DataTable history1 = new Connect().getTable(History1);
                                             string waktu_p1 = history.Rows[0]["putaran1"].ToString();
                                             Label_Putaran1.Text = waktu;
+
+                                            PlaySoundCounter();
                                         }
                                         else if (Putaran2 == "0")
                                         {
@@ -6388,11 +6427,15 @@ namespace Track_ShuttleRun
                                             showMessage("Putaran 2", Color.FromArgb(243, 246, 249));
                                             Label_JumlahPutaran.Text = "2";
 
+                                            
+
 
                                             string History2 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                             DataTable history2 = new Connect().getTable(History2);
                                             string waktu_p2 = history.Rows[0]["putaran2"].ToString();
                                             Label_Putaran2.Text = waktu;
+
+                                            PlaySoundCounter();
 
                                         }
                                         else if (Putaran3 == "0")
@@ -6410,6 +6453,8 @@ namespace Track_ShuttleRun
                                             //MessageBox.Show("Selesai");
                                             Label_JumlahPutaran.Text = "3";
 
+                                            
+
                                             string History3 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                             DataTable history3 = new Connect().getTable(History3);
 
@@ -6419,6 +6464,7 @@ namespace Track_ShuttleRun
                                             timer1.Stop();                                            
 
                                             postDataNilai(waktu,noPeserta, idtestor);
+                                            PlaySoundFinish();
 
 
 
@@ -6452,7 +6498,7 @@ namespace Track_ShuttleRun
                                 //new Connect().execute(InsertHistory);
 
                                 //MessageBox.Show ("Salah");
-                                showMessage("Salah", Color.FromArgb(243, 246, 249));
+                                //showMessage("Salah", Color.FromArgb(243, 246, 249));
                                 //this.Close();
                             }
                         }
@@ -8615,7 +8661,7 @@ namespace Track_ShuttleRun
         private void button1_Click_1(object sender, EventArgs e)
         {
             ReloadClear();
-            //Application.Restart();
+            Application.Restart();
             //Environment.Exit(0);
         }
 
