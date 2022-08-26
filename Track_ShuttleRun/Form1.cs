@@ -552,7 +552,7 @@ namespace Track_ShuttleRun
                         MessageBox.Show("Peserta Sudah Melaksanakan Tes");
                         btn_Ulangi.Show();
                         btnConnect.Enabled = false;
-                        showMessage("Klik Ulangi/Reload ", Color.FromArgb(243, 246, 249));
+                        showMessage("Klik Ulangi/NEXT ", Color.FromArgb(243, 246, 249));
                     }
                 }
                 else
@@ -4926,7 +4926,7 @@ namespace Track_ShuttleRun
             var myPlayer = new System.Media.SoundPlayer();
             string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
             // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
-            myPlayer.SoundLocation = dir + @"\Sound\Finish.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\Finish-1.wav";
             myPlayer.Play();
         }
 
@@ -6476,7 +6476,7 @@ namespace Track_ShuttleRun
                                             btn_Ulangi.Show();
 
                                             LabelNotif.Text = "Finish..";
-                                            showMessage("Finish. . Klik Reload/Ulangi", Color.FromArgb(243, 246, 249));
+                                            showMessage("Finish. . Klik Ulangi/NEXT", Color.FromArgb(243, 246, 249));
 
                                         }
                                     }
