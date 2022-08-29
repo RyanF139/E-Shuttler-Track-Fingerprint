@@ -25,6 +25,7 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 using libzkfpcsharp;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Track_ShuttleRun
 {
@@ -1594,6 +1595,7 @@ namespace Track_ShuttleRun
             // Head Len Address Cmd ABCDEFGH Interval Reserve5    Session Target Optimize Ongoing [Target Quantity]Phase Repeat Check
             // Head Len Address Cmd ABCDEFGH Interval Reserve4 SL Session Target Phase Pow12345678                       Repeat Check
             beforeCmdExecTime = DateTime.Now;
+            
             BeginInvoke(new ThreadStart(delegate () {
                 int writeIndex = 0;
                 byte[] rawData = new byte[256];
@@ -1746,6 +1748,7 @@ namespace Track_ShuttleRun
         {
             BeginInvoke(new ThreadStart(delegate () {
                 //Console.WriteLine("-----------------RunLoopFastSwitch");
+                
                 if (antType16.Checked)
                 {
                     if (useAntG1)
@@ -1997,7 +2000,7 @@ namespace Track_ShuttleRun
                 //btnInventory.Enabled = true;
                 btnConnect.Enabled = true;
                 ConnectReader();
-
+                btnInventory_Click_1(sender, e);
 
 
             }
@@ -2008,6 +2011,33 @@ namespace Track_ShuttleRun
                 btnConnect.Enabled = false;
 
                 DisconnectReader();
+            }
+        }
+
+
+        private bool btnisstartSound = false;
+        private void btnStartSound(object sender , EventArgs e)
+        {
+            if(!btnisstartSound)
+            {
+                btnInventory.BackColor = Color.WhiteSmoke;
+                btnInventory.ForeColor = Color.DarkBlue;
+                btnInventory.Text = "STOP";
+                PlaySoundStart();
+                btnisstartSound = true;
+            }
+            else
+            {
+                btnInventory.BackColor = Color.WhiteSmoke;
+                btnInventory.ForeColor = Color.DarkBlue;
+                btnInventory.Text = "START";
+                stopwatch.Stop();
+                timer1.Stop();
+                btnisstartSound = false;
+                btn_Reload.Enabled = true;
+                btnConnect.PerformClick();
+                btn_Ulangi.Show();
+                
             }
         }
 
@@ -2034,7 +2064,7 @@ namespace Track_ShuttleRun
             }
         }
 
-        private void ConnectReader()
+        private async void ConnectReader()
         {
             if (radio_btn_rs232.Checked)
             {
@@ -2085,6 +2115,8 @@ namespace Track_ShuttleRun
                     }
 
                     SetFormEnable(true);
+
+
                 }
                 catch (Exception ex)
                 {
@@ -3495,6 +3527,7 @@ namespace Track_ShuttleRun
 
         private void ProcessFastSwitch(Reader.MessageTran msgTran)
         {
+ 
             string strCmd = string.Format("{0}", FindResource("tipFastSwitch"));
             string strErrorCode = string.Empty;
 
@@ -3502,8 +3535,9 @@ namespace Track_ShuttleRun
             {
                 strErrorCode = ReaderUtils.FormatErrorCode(msgTran.AryData[0]);
                 string strLog = string.Format("{0}{1}: {2}", strCmd, FindResource("FailedCause"), strErrorCode);
-
+               
                 WriteLog(lrtxtLog, strLog, 1);
+                
                 if (isFastInv)
                 {
                     FastInventory();
@@ -3524,6 +3558,7 @@ namespace Track_ShuttleRun
                 if (doingFastInv)
                 {
                     WriteLog(lrtxtLog, strCmd, 0);
+                    
                     BeginInvoke(new ThreadStart(delegate () {
                         tagdb.UpdateCmd8AExecuteSuccess(msgTran.AryData);
                         led_cmd_readrate.Text = tagdb.CmdReadRate.ToString();
@@ -4910,15 +4945,17 @@ namespace Track_ShuttleRun
                 reader.SetWorkAntenna(m_curSetting.btReadId, m_curSetting.btWorkAntenna);
             }
         }
-
-        public void PlaySoundStart()
+        public bool isStartTime = false;
+        public async void PlaySoundStart()
         {
+            isStartTime = false;
             var myPlayer = new System.Media.SoundPlayer();
             string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
             // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
             myPlayer.SoundLocation = dir + @"\Sound\countdown shuttle run.wav";
             myPlayer.Play();
-
+            await Task.Delay(4000);
+            isStartTime = true;
         }
 
         public void PlaySoundFinish()
@@ -4941,7 +4978,7 @@ namespace Track_ShuttleRun
         }
 
 
-        private void FastInventory_Click(object sender, EventArgs e)
+        private void FastInventory_flick(object sender, EventArgs e)
         {
 
             if (btnInventory.Text.Equals(FindResource("StartInventory")))
@@ -4949,6 +4986,7 @@ namespace Track_ShuttleRun
                 if (Inventorying)
                 {
                     MessageBox.Show(FindResource("Inventorying"));
+                    
                     return;
                 }
 
@@ -4956,9 +4994,10 @@ namespace Track_ShuttleRun
                 {
                     //MessageBox.Show("Please select at least one antenna to poll at least once and repeat at least once.");
                     MessageBox.Show("Please 'Connect' before 'Start'");
-                    btnInventory.BackColor = Color.WhiteSmoke;
-                    btnInventory.ForeColor = Color.DarkBlue;
-                    btnInventory.Text = FindResource("StartInventory");
+                    //btnInventory.BackColor = Color.WhiteSmoke;
+                    //btnInventory.ForeColor = Color.DarkBlue;
+                    //btnInventory.Text = FindResource("StartInventory");
+                    
                     return;
                 }
 
@@ -4970,9 +5009,9 @@ namespace Track_ShuttleRun
                         return;
                     }
 
-                    btnInventory.BackColor = Color.DarkBlue;
-                    btnInventory.ForeColor = Color.White;
-                    btnInventory.Text = FindResource("StopInventory");
+                    //btnInventory.BackColor = Color.DarkBlue;
+                    //btnInventory.ForeColor = Color.White;
+                    //btnInventory.Text = FindResource("StopInventory");
 
                     isFastInv = true;
                     doingFastInv = true;
@@ -4983,6 +5022,8 @@ namespace Track_ShuttleRun
                     m_FastExeCount = Convert.ToInt32(mInventoryExeCount.Text);
 
                     tagdb.AntGroup = 0x00;
+
+                    
 
                     if (antType16.Checked)
                     {
@@ -5011,11 +5052,11 @@ namespace Track_ShuttleRun
                     }
 
                     showMessage("Track Siap !!", Color.FromArgb(243, 246, 249));
-                    PlaySoundStart();
                     startInventoryTime = DateTime.Now;
                     dispatcherTimer.Start();
                     readratePerSecond.Start();
                     
+
                 }
                 catch (Exception ex)
                 {
@@ -6383,13 +6424,17 @@ namespace Track_ShuttleRun
                         if (Cek_History.Rows.Count > 0)
                         {
                             int HistoryAntena = int.Parse(Cek_History.Rows[0]["antena"].ToString());
+                            
                             if (antena == HistoryAntena + 1)
                             {
-                                string InsertHistory = "insert into history_track (no_track,barcode,antena,no_rfid,waktu) values('" + Track + "','" + id_barcode + "','" + antena + "' , '" + epc + "','" + waktu + "')";
-                                new Connect().execute(InsertHistory);
-
-                                stopwatch.Start();
-                                timer1.Start();
+                                
+                                if (isStartTime)
+                                {
+                                    string InsertHistory = "insert into history_track (no_track,barcode,antena,no_rfid,waktu) values('" + Track + "','" + id_barcode + "','" + antena + "' , '" + epc + "','" + waktu + "')";
+                                    new Connect().execute(InsertHistory);
+                                    stopwatch.Start();
+                                    timer1.Start();
+                                }
 
                                 if (antena == 4 && HistoryAntena == 3)
                                 {
@@ -6412,9 +6457,9 @@ namespace Track_ShuttleRun
                                             
 
 
-                                            string History1 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
+                                            /*string History1 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                             DataTable history1 = new Connect().getTable(History1);
-                                            string waktu_p1 = history.Rows[0]["putaran1"].ToString();
+                                            string waktu_p1 = history.Rows[0]["putaran1"].ToString();*/
                                             Label_Putaran1.Text = waktu;
 
                                             PlaySoundCounter();
@@ -6430,9 +6475,9 @@ namespace Track_ShuttleRun
                                             
 
 
-                                            string History2 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
+                                           /* string History2 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                             DataTable history2 = new Connect().getTable(History2);
-                                            string waktu_p2 = history.Rows[0]["putaran2"].ToString();
+                                            string waktu_p2 = history.Rows[0]["putaran2"].ToString();*/
                                             Label_Putaran2.Text = waktu;
 
                                             PlaySoundCounter();
@@ -6440,7 +6485,7 @@ namespace Track_ShuttleRun
                                         }
                                         else if (Putaran3 == "0")
                                         {
-                                            string UpdateWaktu = "update history set putaran3 = '" + waktu + "' where barcode = '" + id_barcode + "'";
+                                            /*string UpdateWaktu = "update history set putaran3 = '" + waktu + "' where barcode = '" + id_barcode + "'";
                                             new Connect().execute(UpdateWaktu);
                                             string UpdateWaktuAkhir = "update history set waktu_akhir = '" + waktu + "' where barcode = '" + id_barcode + "'";
                                             new Connect().execute(UpdateWaktuAkhir);
@@ -6450,21 +6495,24 @@ namespace Track_ShuttleRun
 
                                             string UpdateAkhir = "update peserta set capaian= '" + waktu + "' where barcode = '" + id_barcode + "'";
                                             new Connect().execute(UpdateAkhir);
-                                            //MessageBox.Show("Selesai");
+                                            //MessageBox.Show("Selesai");*/
+
+                                            string UpdateWaktu = "update history set putaran3 = '"+waktu+"',waktu_akhir = '"+ waktu +"',status = 'selesai' where barcode = '"+ id_barcode +"'";
+                                            new Connect().execute(UpdateWaktu);
                                             Label_JumlahPutaran.Text = "3";
 
                                             
-
-                                            string History3 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
+                                           /* string History3 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                             DataTable history3 = new Connect().getTable(History3);
 
-                                            string waktu_p3 = history.Rows[0]["putaran3"].ToString();
+                                            string waktu_p3 = history.Rows[0]["putaran3"].ToString();*/
                                             Label_Putaran3.Text = waktu;
                                             stopwatch.Stop();
-                                            timer1.Stop();                                            
+                                            timer1.Stop();
+                                            PlaySoundFinish();
 
                                             postDataNilai(waktu,noPeserta, idtestor);
-                                            PlaySoundFinish();
+                                            
 
 
 
@@ -6474,6 +6522,7 @@ namespace Track_ShuttleRun
                                             btnConnect.Enabled = false;
 
                                             btn_Ulangi.Show();
+                                            isStartTime = false;
 
                                             LabelNotif.Text = "Finish..";
                                             showMessage("Finish. . Klik Ulangi/NEXT", Color.FromArgb(243, 246, 249));
@@ -6590,7 +6639,9 @@ namespace Track_ShuttleRun
                         }
                     }
                 }
+
             }));
+
         }
 
         async void postDataNilai(String waktu, String pesertaid, String idtestor)
@@ -7127,6 +7178,7 @@ namespace Track_ShuttleRun
             if (radio_btn_fast_inv.Checked)
             {
                 //stopwatch.Start();
+               
                 FastInventory_Click(sender, e);
             }
             else if (radio_btn_realtime_inv.Checked)

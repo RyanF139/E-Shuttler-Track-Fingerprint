@@ -162,6 +162,7 @@
     <EmbeddedResource Include="WinFormString.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>WinFormString.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
