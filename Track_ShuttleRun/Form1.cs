@@ -4978,7 +4978,7 @@ namespace Track_ShuttleRun
         }
 
 
-        private void FastInventory_flick(object sender, EventArgs e)
+        private void FastInventory_Click(object sender, EventArgs e)
         {
 
             if (btnInventory.Text.Equals(FindResource("StartInventory")))
