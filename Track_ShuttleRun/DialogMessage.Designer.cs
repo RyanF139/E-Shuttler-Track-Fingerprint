@@ -91,7 +91,7 @@
             this.Controls.Add(this.textMessage);
             this.Controls.Add(this.Toast);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(1401, 934);
+            this.Location = new System.Drawing.Point(1401, 960);
             this.Name = "DialogMessage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "DialogMessage";
