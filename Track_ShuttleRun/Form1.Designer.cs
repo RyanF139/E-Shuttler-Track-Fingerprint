@@ -60,15 +60,11 @@ namespace Track_ShuttleRun
             this.label1 = new System.Windows.Forms.Label();
             this.grb_tcp = new System.Windows.Forms.GroupBox();
             this.txtTcpPort = new System.Windows.Forms.TextBox();
-            this.ipIpServer = new CustomControl.IpAddressTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.gbCmdReaderAddress = new System.Windows.Forms.GroupBox();
-            this.htxtReadId = new CustomControl.HexTextBox();
             this.btnSetReadAddress = new System.Windows.Forms.Button();
             this.gbCmdBaudrate = new System.Windows.Forms.GroupBox();
-            this.htbGetIdentifier = new CustomControl.HexTextBox();
-            this.htbSetIdentifier = new CustomControl.HexTextBox();
             this.btSetIdentifier = new System.Windows.Forms.Button();
             this.btGetIdentifier = new System.Windows.Forms.Button();
             this.btReaderSetupRefresh = new System.Windows.Forms.Button();
@@ -336,16 +332,11 @@ namespace Track_ShuttleRun
             this.button7 = new System.Windows.Forms.Button();
             this.txtFastMaxRssi = new System.Windows.Forms.TextBox();
             this.groupBox25 = new System.Windows.Forms.GroupBox();
-            this.led_total_tagreads = new LxControl.LxLedControl();
             this.label58 = new System.Windows.Forms.Label();
-            this.led_totalread_count = new LxControl.LxLedControl();
-            this.led_cmd_readrate = new LxControl.LxLedControl();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.led_cmd_execute_duration = new LxControl.LxLedControl();
             this.label57 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.ledFast_total_execute_time = new LxControl.LxLedControl();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.grb_inventory_type = new System.Windows.Forms.GroupBox();
             this.radio_btn_cache_inv = new System.Windows.Forms.RadioButton();
@@ -375,10 +366,8 @@ namespace Track_ShuttleRun
             this.gbCmdOperateTag = new System.Windows.Forms.GroupBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.btnKillTag = new System.Windows.Forms.Button();
-            this.htxtKillPwd = new CustomControl.HexTextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.htxtLockPwd = new CustomControl.HexTextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.rdbUserMemory = new System.Windows.Forms.RadioButton();
@@ -393,10 +382,8 @@ namespace Track_ShuttleRun
             this.rdbFree = new System.Windows.Forms.RadioButton();
             this.btnLockTag = new System.Windows.Forms.Button();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.hexTb_accessPw = new CustomControl.HexTextBox();
             this.radio_btnBlockWrite = new System.Windows.Forms.RadioButton();
             this.radio_btnWrite = new System.Windows.Forms.RadioButton();
-            this.hexTb_WriteData = new CustomControl.HexTextBox();
             this.tb_wordLen = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.btnWriteTag = new System.Windows.Forms.Button();
@@ -437,7 +424,6 @@ namespace Track_ShuttleRun
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.bitLen = new System.Windows.Forms.TextBox();
             this.startAddr = new System.Windows.Forms.TextBox();
-            this.hexTextBox_mask = new CustomControl.HexTextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.combo_mast_id = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
@@ -463,43 +449,33 @@ namespace Track_ShuttleRun
             this.panel2 = new System.Windows.Forms.Panel();
             this.label41 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
-            this.htxtReadUID = new CustomControl.HexTextBox();
             this.gbISO1800ReadWrite = new System.Windows.Forms.GroupBox();
             this.txtLoopTimes = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.txtLoop = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.htxtWriteData18000 = new CustomControl.HexTextBox();
             this.txtWriteLength = new System.Windows.Forms.TextBox();
-            this.htxtReadData18000 = new CustomControl.HexTextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.btnWriteTagISO18000 = new System.Windows.Forms.Button();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.txtReadLength = new System.Windows.Forms.TextBox();
-            this.htxtWriteStartAdd = new CustomControl.HexTextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.htxtReadStartAdd = new CustomControl.HexTextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.btnReadTagISO18000 = new System.Windows.Forms.Button();
             this.gbISO1800LockQuery = new System.Windows.Forms.GroupBox();
             this.txtStatus = new System.Windows.Forms.TextBox();
-            this.htxtQueryAdd = new CustomControl.HexTextBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.htxtLockAdd = new CustomControl.HexTextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.btnQueryTagISO18000 = new System.Windows.Forms.Button();
             this.btnLockTagISO18000 = new System.Windows.Forms.Button();
             this.PagTranDataLog = new System.Windows.Forms.TabPage();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.lrtxtDataTran = new CustomControl.LogRichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.htxtSendData = new CustomControl.HexTextBox();
             this.btnSaveData = new System.Windows.Forms.Button();
             this.btnClearData = new System.Windows.Forms.Button();
-            this.htxtCheckData = new CustomControl.HexTextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.btnSendData = new System.Windows.Forms.Button();
             this.net_configure_tabPage = new System.Windows.Forms.TabPage();
@@ -639,16 +615,11 @@ namespace Track_ShuttleRun
             this.label78 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.lxLedControl9 = new LxControl.LxLedControl();
-            this.lxLedControl10 = new LxControl.LxLedControl();
-            this.lxLedControl11 = new LxControl.LxLedControl();
-            this.lxLedControl12 = new LxControl.LxLedControl();
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
-            this.lxLedControl13 = new LxControl.LxLedControl();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader43 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader44 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -670,8 +641,8 @@ namespace Track_ShuttleRun
             this.lblUsia = new System.Windows.Forms.Label();
             this.lblTanggalLahir = new System.Windows.Forms.Label();
             this.btn_Ulangi = new System.Windows.Forms.Button();
-            this.lblJabatan = new System.Windows.Forms.Label();
-            this.lblNRP = new System.Windows.Forms.Label();
+            this.lblAsalSekolah = new System.Windows.Forms.Label();
+            this.lblNOPJurusan = new System.Windows.Forms.Label();
             this.textBarId = new System.Windows.Forms.Label();
             this.lblNama = new System.Windows.Forms.Label();
             this.btnReconnect = new System.Windows.Forms.Button();
@@ -680,7 +651,6 @@ namespace Track_ShuttleRun
             this.btnInventory = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ckClearOperationRec = new System.Windows.Forms.CheckBox();
-            this.lrtxtLog = new CustomControl.LogRichTextBox();
             this.ckDisplayLog = new System.Windows.Forms.CheckBox();
             this.label35 = new System.Windows.Forms.Label();
             this.Label_No_ShuttleRun = new System.Windows.Forms.Label();
@@ -693,6 +663,36 @@ namespace Track_ShuttleRun
             this.Label_NoPeserta = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lrtxtLog = new CustomControl.LogRichTextBox();
+            this.ipIpServer = new CustomControl.IpAddressTextBox();
+            this.htxtReadId = new CustomControl.HexTextBox();
+            this.htbGetIdentifier = new CustomControl.HexTextBox();
+            this.htbSetIdentifier = new CustomControl.HexTextBox();
+            this.led_total_tagreads = new LxControl.LxLedControl();
+            this.led_totalread_count = new LxControl.LxLedControl();
+            this.led_cmd_readrate = new LxControl.LxLedControl();
+            this.led_cmd_execute_duration = new LxControl.LxLedControl();
+            this.ledFast_total_execute_time = new LxControl.LxLedControl();
+            this.htxtKillPwd = new CustomControl.HexTextBox();
+            this.htxtLockPwd = new CustomControl.HexTextBox();
+            this.hexTb_accessPw = new CustomControl.HexTextBox();
+            this.hexTb_WriteData = new CustomControl.HexTextBox();
+            this.hexTextBox_mask = new CustomControl.HexTextBox();
+            this.htxtReadUID = new CustomControl.HexTextBox();
+            this.htxtWriteData18000 = new CustomControl.HexTextBox();
+            this.htxtReadData18000 = new CustomControl.HexTextBox();
+            this.htxtWriteStartAdd = new CustomControl.HexTextBox();
+            this.htxtReadStartAdd = new CustomControl.HexTextBox();
+            this.htxtQueryAdd = new CustomControl.HexTextBox();
+            this.htxtLockAdd = new CustomControl.HexTextBox();
+            this.lrtxtDataTran = new CustomControl.LogRichTextBox();
+            this.htxtSendData = new CustomControl.HexTextBox();
+            this.htxtCheckData = new CustomControl.HexTextBox();
+            this.lxLedControl9 = new LxControl.LxLedControl();
+            this.lxLedControl10 = new LxControl.LxLedControl();
+            this.lxLedControl11 = new LxControl.LxLedControl();
+            this.lxLedControl12 = new LxControl.LxLedControl();
+            this.lxLedControl13 = new LxControl.LxLedControl();
             this.lxLedControl14 = new LxControl.LxLedControl();
             this.lxLedControl15 = new LxControl.LxLedControl();
             this.lxLedControl16 = new LxControl.LxLedControl();
@@ -756,11 +756,6 @@ namespace Track_ShuttleRun
             this.groupBox26.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_fast_inv_tags)).BeginInit();
             this.groupBox25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.led_total_tagreads)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.led_totalread_count)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.led_cmd_readrate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.led_cmd_execute_duration)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ledFast_total_execute_time)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.grb_inventory_type.SuspendLayout();
             this.groupBox27.SuspendLayout();
@@ -819,17 +814,22 @@ namespace Track_ShuttleRun
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl13)).BeginInit();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFPImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_Male)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon_Female)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.led_total_tagreads)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.led_totalread_count)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.led_cmd_readrate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.led_cmd_execute_duration)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ledFast_total_execute_time)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).BeginInit();
@@ -1157,14 +1157,6 @@ namespace Track_ShuttleRun
             this.txtTcpPort.TabIndex = 1;
             this.txtTcpPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // ipIpServer
-            // 
-            this.ipIpServer.IpAddressStr = "";
-            this.ipIpServer.Location = new System.Drawing.Point(113, 25);
-            this.ipIpServer.Name = "ipIpServer";
-            this.ipIpServer.Size = new System.Drawing.Size(122, 21);
-            this.ipIpServer.TabIndex = 0;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -1197,14 +1189,6 @@ namespace Track_ShuttleRun
             this.gbCmdReaderAddress.TabStop = false;
             this.gbCmdReaderAddress.Text = "RS485 Address(HEX)";
             // 
-            // htxtReadId
-            // 
-            this.htxtReadId.Location = new System.Drawing.Point(113, 25);
-            this.htxtReadId.Name = "htxtReadId";
-            this.htxtReadId.Size = new System.Drawing.Size(122, 20);
-            this.htxtReadId.TabIndex = 2;
-            this.htxtReadId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // btnSetReadAddress
             // 
             this.btnSetReadAddress.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -1229,23 +1213,6 @@ namespace Track_ShuttleRun
             this.gbCmdBaudrate.TabIndex = 7;
             this.gbCmdBaudrate.TabStop = false;
             this.gbCmdBaudrate.Text = "Reader Identifier(12 Bytes)";
-            // 
-            // htbGetIdentifier
-            // 
-            this.htbGetIdentifier.Location = new System.Drawing.Point(13, 22);
-            this.htbGetIdentifier.Name = "htbGetIdentifier";
-            this.htbGetIdentifier.ReadOnly = true;
-            this.htbGetIdentifier.Size = new System.Drawing.Size(228, 20);
-            this.htbGetIdentifier.TabIndex = 13;
-            this.htbGetIdentifier.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // htbSetIdentifier
-            // 
-            this.htbSetIdentifier.Location = new System.Drawing.Point(13, 61);
-            this.htbSetIdentifier.Name = "htbSetIdentifier";
-            this.htbSetIdentifier.Size = new System.Drawing.Size(228, 20);
-            this.htbSetIdentifier.TabIndex = 12;
-            this.htbSetIdentifier.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btSetIdentifier
             // 
@@ -4238,28 +4205,6 @@ namespace Track_ShuttleRun
             this.groupBox25.TabStop = false;
             this.groupBox25.Text = "Data";
             // 
-            // led_total_tagreads
-            // 
-            this.led_total_tagreads.BackColor = System.Drawing.Color.Transparent;
-            this.led_total_tagreads.BackColor_1 = System.Drawing.Color.Transparent;
-            this.led_total_tagreads.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.led_total_tagreads.BevelRate = 0.1F;
-            this.led_total_tagreads.BorderColor = System.Drawing.Color.Lavender;
-            this.led_total_tagreads.BorderWidth = 3;
-            this.led_total_tagreads.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.led_total_tagreads.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.led_total_tagreads.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.led_total_tagreads.HighlightOpaque = ((byte)(20));
-            this.led_total_tagreads.Location = new System.Drawing.Point(6, 35);
-            this.led_total_tagreads.Name = "led_total_tagreads";
-            this.led_total_tagreads.RoundCorner = true;
-            this.led_total_tagreads.SegmentIntervalRatio = 50;
-            this.led_total_tagreads.ShowHighlight = true;
-            this.led_total_tagreads.Size = new System.Drawing.Size(238, 89);
-            this.led_total_tagreads.TabIndex = 21;
-            this.led_total_tagreads.Text = "0";
-            this.led_total_tagreads.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            // 
             // label58
             // 
             this.label58.AutoSize = true;
@@ -4271,50 +4216,6 @@ namespace Track_ShuttleRun
             this.label58.Size = new System.Drawing.Size(131, 12);
             this.label58.TabIndex = 26;
             this.label58.Text = "Inventoried Quantity:";
-            // 
-            // led_totalread_count
-            // 
-            this.led_totalread_count.BackColor = System.Drawing.Color.Transparent;
-            this.led_totalread_count.BackColor_1 = System.Drawing.Color.Transparent;
-            this.led_totalread_count.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.led_totalread_count.BevelRate = 0.1F;
-            this.led_totalread_count.BorderColor = System.Drawing.Color.Lavender;
-            this.led_totalread_count.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.led_totalread_count.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.led_totalread_count.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.led_totalread_count.HighlightOpaque = ((byte)(20));
-            this.led_totalread_count.Location = new System.Drawing.Point(386, 26);
-            this.led_totalread_count.Name = "led_totalread_count";
-            this.led_totalread_count.RoundCorner = true;
-            this.led_totalread_count.SegmentIntervalRatio = 50;
-            this.led_totalread_count.ShowHighlight = true;
-            this.led_totalread_count.Size = new System.Drawing.Size(252, 35);
-            this.led_totalread_count.TabIndex = 40;
-            this.led_totalread_count.Text = "0";
-            this.led_totalread_count.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.led_totalread_count.TotalCharCount = 14;
-            // 
-            // led_cmd_readrate
-            // 
-            this.led_cmd_readrate.BackColor = System.Drawing.Color.Transparent;
-            this.led_cmd_readrate.BackColor_1 = System.Drawing.Color.Transparent;
-            this.led_cmd_readrate.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.led_cmd_readrate.BevelRate = 0.1F;
-            this.led_cmd_readrate.BorderColor = System.Drawing.Color.Lavender;
-            this.led_cmd_readrate.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.led_cmd_readrate.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.led_cmd_readrate.ForeColor = System.Drawing.Color.Purple;
-            this.led_cmd_readrate.HighlightOpaque = ((byte)(20));
-            this.led_cmd_readrate.Location = new System.Drawing.Point(255, 26);
-            this.led_cmd_readrate.Name = "led_cmd_readrate";
-            this.led_cmd_readrate.RoundCorner = true;
-            this.led_cmd_readrate.SegmentIntervalRatio = 50;
-            this.led_cmd_readrate.ShowHighlight = true;
-            this.led_cmd_readrate.Size = new System.Drawing.Size(124, 37);
-            this.led_cmd_readrate.TabIndex = 34;
-            this.led_cmd_readrate.Text = "0";
-            this.led_cmd_readrate.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.led_cmd_readrate.TotalCharCount = 6;
             // 
             // label55
             // 
@@ -4340,28 +4241,6 @@ namespace Track_ShuttleRun
             this.label56.TabIndex = 28;
             this.label56.Text = "Command Duration(mS):";
             // 
-            // led_cmd_execute_duration
-            // 
-            this.led_cmd_execute_duration.BackColor = System.Drawing.Color.Transparent;
-            this.led_cmd_execute_duration.BackColor_1 = System.Drawing.Color.Transparent;
-            this.led_cmd_execute_duration.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.led_cmd_execute_duration.BevelRate = 0.1F;
-            this.led_cmd_execute_duration.BorderColor = System.Drawing.Color.Lavender;
-            this.led_cmd_execute_duration.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.led_cmd_execute_duration.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.led_cmd_execute_duration.ForeColor = System.Drawing.Color.Purple;
-            this.led_cmd_execute_duration.HighlightOpaque = ((byte)(20));
-            this.led_cmd_execute_duration.Location = new System.Drawing.Point(255, 90);
-            this.led_cmd_execute_duration.Name = "led_cmd_execute_duration";
-            this.led_cmd_execute_duration.RoundCorner = true;
-            this.led_cmd_execute_duration.SegmentIntervalRatio = 50;
-            this.led_cmd_execute_duration.ShowHighlight = true;
-            this.led_cmd_execute_duration.Size = new System.Drawing.Size(121, 34);
-            this.led_cmd_execute_duration.TabIndex = 33;
-            this.led_cmd_execute_duration.Text = "0";
-            this.led_cmd_execute_duration.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.led_cmd_execute_duration.TotalCharCount = 6;
-            // 
             // label57
             // 
             this.label57.AutoSize = true;
@@ -4385,28 +4264,6 @@ namespace Track_ShuttleRun
             this.label54.Size = new System.Drawing.Size(179, 12);
             this.label54.TabIndex = 30;
             this.label54.Text = "Total Inventory Duration(mS):";
-            // 
-            // ledFast_total_execute_time
-            // 
-            this.ledFast_total_execute_time.BackColor = System.Drawing.Color.Transparent;
-            this.ledFast_total_execute_time.BackColor_1 = System.Drawing.Color.Transparent;
-            this.ledFast_total_execute_time.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.ledFast_total_execute_time.BevelRate = 0.1F;
-            this.ledFast_total_execute_time.BorderColor = System.Drawing.Color.Lavender;
-            this.ledFast_total_execute_time.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.ledFast_total_execute_time.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.ledFast_total_execute_time.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.ledFast_total_execute_time.HighlightOpaque = ((byte)(20));
-            this.ledFast_total_execute_time.Location = new System.Drawing.Point(386, 90);
-            this.ledFast_total_execute_time.Name = "ledFast_total_execute_time";
-            this.ledFast_total_execute_time.RoundCorner = true;
-            this.ledFast_total_execute_time.SegmentIntervalRatio = 50;
-            this.ledFast_total_execute_time.ShowHighlight = true;
-            this.ledFast_total_execute_time.Size = new System.Drawing.Size(252, 35);
-            this.ledFast_total_execute_time.TabIndex = 35;
-            this.ledFast_total_execute_time.Text = "0";
-            this.ledFast_total_execute_time.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.ledFast_total_execute_time.TotalCharCount = 14;
             // 
             // groupBox2
             // 
@@ -4691,13 +4548,6 @@ namespace Track_ShuttleRun
             this.btnKillTag.UseVisualStyleBackColor = true;
             this.btnKillTag.Click += new System.EventHandler(this.btnKillTag_Click);
             // 
-            // htxtKillPwd
-            // 
-            this.htxtKillPwd.Location = new System.Drawing.Point(421, 17);
-            this.htxtKillPwd.Name = "htxtKillPwd";
-            this.htxtKillPwd.Size = new System.Drawing.Size(120, 21);
-            this.htxtKillPwd.TabIndex = 13;
-            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -4722,13 +4572,6 @@ namespace Track_ShuttleRun
             this.groupBox15.TabIndex = 3;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Lock Tag";
-            // 
-            // htxtLockPwd
-            // 
-            this.htxtLockPwd.Location = new System.Drawing.Point(737, 52);
-            this.htxtLockPwd.Name = "htxtLockPwd";
-            this.htxtLockPwd.Size = new System.Drawing.Size(120, 21);
-            this.htxtLockPwd.TabIndex = 12;
             // 
             // label28
             // 
@@ -4907,14 +4750,6 @@ namespace Track_ShuttleRun
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Read/Write Tag";
             // 
-            // hexTb_accessPw
-            // 
-            this.hexTb_accessPw.Location = new System.Drawing.Point(421, 23);
-            this.hexTb_accessPw.Name = "hexTb_accessPw";
-            this.hexTb_accessPw.Size = new System.Drawing.Size(105, 21);
-            this.hexTb_accessPw.TabIndex = 13;
-            this.hexTb_accessPw.Text = "00 00 00 00";
-            // 
             // radio_btnBlockWrite
             // 
             this.radio_btnBlockWrite.AutoSize = true;
@@ -4938,13 +4773,6 @@ namespace Track_ShuttleRun
             this.radio_btnWrite.TabIndex = 11;
             this.radio_btnWrite.Text = "Write";
             this.radio_btnWrite.UseVisualStyleBackColor = true;
-            // 
-            // hexTb_WriteData
-            // 
-            this.hexTb_WriteData.Location = new System.Drawing.Point(135, 58);
-            this.hexTb_WriteData.Name = "hexTb_WriteData";
-            this.hexTb_WriteData.Size = new System.Drawing.Size(572, 21);
-            this.hexTb_WriteData.TabIndex = 10;
             // 
             // tb_wordLen
             // 
@@ -5360,14 +5188,6 @@ namespace Track_ShuttleRun
             this.startAddr.TabIndex = 20;
             this.startAddr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // hexTextBox_mask
-            // 
-            this.hexTextBox_mask.Location = new System.Drawing.Point(155, 94);
-            this.hexTextBox_mask.Name = "hexTextBox_mask";
-            this.hexTextBox_mask.Size = new System.Drawing.Size(432, 21);
-            this.hexTextBox_mask.TabIndex = 18;
-            this.hexTextBox_mask.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label38
             // 
             this.label38.AutoSize = true;
@@ -5647,16 +5467,6 @@ namespace Track_ShuttleRun
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // htxtReadUID
-            // 
-            this.htxtReadUID.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold);
-            this.htxtReadUID.Location = new System.Drawing.Point(117, 11);
-            this.htxtReadUID.Name = "htxtReadUID";
-            this.htxtReadUID.ReadOnly = true;
-            this.htxtReadUID.Size = new System.Drawing.Size(195, 21);
-            this.htxtReadUID.TabIndex = 6;
-            this.htxtReadUID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // gbISO1800ReadWrite
             // 
             this.gbISO1800ReadWrite.Controls.Add(this.txtLoopTimes);
@@ -5722,15 +5532,6 @@ namespace Track_ShuttleRun
             this.label40.TabIndex = 12;
             this.label40.Text = "Command Repeat:";
             // 
-            // htxtWriteData18000
-            // 
-            this.htxtWriteData18000.Location = new System.Drawing.Point(117, 250);
-            this.htxtWriteData18000.Multiline = true;
-            this.htxtWriteData18000.Name = "htxtWriteData18000";
-            this.htxtWriteData18000.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.htxtWriteData18000.Size = new System.Drawing.Size(383, 158);
-            this.htxtWriteData18000.TabIndex = 9;
-            // 
             // txtWriteLength
             // 
             this.txtWriteLength.Location = new System.Drawing.Point(274, 192);
@@ -5740,16 +5541,6 @@ namespace Track_ShuttleRun
             this.txtWriteLength.Size = new System.Drawing.Size(41, 20);
             this.txtWriteLength.TabIndex = 11;
             this.txtWriteLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // htxtReadData18000
-            // 
-            this.htxtReadData18000.Location = new System.Drawing.Point(117, 52);
-            this.htxtReadData18000.Multiline = true;
-            this.htxtReadData18000.Name = "htxtReadData18000";
-            this.htxtReadData18000.ReadOnly = true;
-            this.htxtReadData18000.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.htxtReadData18000.Size = new System.Drawing.Size(383, 133);
-            this.htxtReadData18000.TabIndex = 11;
             // 
             // label45
             // 
@@ -5801,15 +5592,6 @@ namespace Track_ShuttleRun
             this.txtReadLength.TabIndex = 9;
             this.txtReadLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // htxtWriteStartAdd
-            // 
-            this.htxtWriteStartAdd.Location = new System.Drawing.Point(117, 192);
-            this.htxtWriteStartAdd.MaxLength = 2;
-            this.htxtWriteStartAdd.Name = "htxtWriteStartAdd";
-            this.htxtWriteStartAdd.Size = new System.Drawing.Size(39, 20);
-            this.htxtWriteStartAdd.TabIndex = 8;
-            this.htxtWriteStartAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label50
             // 
             this.label50.AutoSize = true;
@@ -5819,15 +5601,6 @@ namespace Track_ShuttleRun
             this.label50.Size = new System.Drawing.Size(71, 13);
             this.label50.TabIndex = 8;
             this.label50.Text = "Length(HEX):";
-            // 
-            // htxtReadStartAdd
-            // 
-            this.htxtReadStartAdd.Location = new System.Drawing.Point(117, 19);
-            this.htxtReadStartAdd.MaxLength = 2;
-            this.htxtReadStartAdd.Name = "htxtReadStartAdd";
-            this.htxtReadStartAdd.Size = new System.Drawing.Size(39, 20);
-            this.htxtReadStartAdd.TabIndex = 7;
-            this.htxtReadStartAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label42
             // 
@@ -5884,15 +5657,6 @@ namespace Track_ShuttleRun
             this.txtStatus.TabIndex = 9;
             this.txtStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // htxtQueryAdd
-            // 
-            this.htxtQueryAdd.Location = new System.Drawing.Point(210, 58);
-            this.htxtQueryAdd.MaxLength = 2;
-            this.htxtQueryAdd.Name = "htxtQueryAdd";
-            this.htxtQueryAdd.Size = new System.Drawing.Size(39, 20);
-            this.htxtQueryAdd.TabIndex = 8;
-            this.htxtQueryAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label46
             // 
             this.label46.AutoSize = true;
@@ -5902,15 +5666,6 @@ namespace Track_ShuttleRun
             this.label46.Size = new System.Drawing.Size(167, 13);
             this.label46.TabIndex = 5;
             this.label46.Text = "Query Lock Status Address(HEX):";
-            // 
-            // htxtLockAdd
-            // 
-            this.htxtLockAdd.Location = new System.Drawing.Point(210, 25);
-            this.htxtLockAdd.MaxLength = 2;
-            this.htxtLockAdd.Name = "htxtLockAdd";
-            this.htxtLockAdd.Size = new System.Drawing.Size(39, 20);
-            this.htxtLockAdd.TabIndex = 8;
-            this.htxtLockAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label47
             // 
@@ -5967,16 +5722,6 @@ namespace Track_ShuttleRun
             this.panel9.Size = new System.Drawing.Size(1554, 565);
             this.panel9.TabIndex = 12;
             // 
-            // lrtxtDataTran
-            // 
-            this.lrtxtDataTran.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lrtxtDataTran.Location = new System.Drawing.Point(0, 0);
-            this.lrtxtDataTran.Name = "lrtxtDataTran";
-            this.lrtxtDataTran.Size = new System.Drawing.Size(1554, 565);
-            this.lrtxtDataTran.TabIndex = 0;
-            this.lrtxtDataTran.Text = "";
-            this.lrtxtDataTran.DoubleClick += new System.EventHandler(this.lrtxtDataTran_DoubleClick);
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -6003,14 +5748,6 @@ namespace Track_ShuttleRun
             this.label16.TabIndex = 1;
             this.label16.Text = "Input Command:";
             // 
-            // htxtSendData
-            // 
-            this.htxtSendData.Location = new System.Drawing.Point(98, 35);
-            this.htxtSendData.Name = "htxtSendData";
-            this.htxtSendData.Size = new System.Drawing.Size(515, 20);
-            this.htxtSendData.TabIndex = 2;
-            this.htxtSendData.Leave += new System.EventHandler(this.htxtSendData_Leave);
-            // 
             // btnSaveData
             // 
             this.btnSaveData.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -6032,14 +5769,6 @@ namespace Track_ShuttleRun
             this.btnClearData.Text = "Clear";
             this.btnClearData.UseVisualStyleBackColor = true;
             this.btnClearData.Click += new System.EventHandler(this.btnClearData_Click);
-            // 
-            // htxtCheckData
-            // 
-            this.htxtCheckData.Location = new System.Drawing.Point(694, 35);
-            this.htxtCheckData.Name = "htxtCheckData";
-            this.htxtCheckData.ReadOnly = true;
-            this.htxtCheckData.Size = new System.Drawing.Size(47, 20);
-            this.htxtCheckData.TabIndex = 4;
             // 
             // label17
             // 
@@ -7534,91 +7263,6 @@ namespace Track_ShuttleRun
             this.comboBox9.Size = new System.Drawing.Size(55, 21);
             this.comboBox9.TabIndex = 39;
             // 
-            // lxLedControl9
-            // 
-            this.lxLedControl9.BackColor = System.Drawing.Color.Transparent;
-            this.lxLedControl9.BackColor_1 = System.Drawing.Color.Transparent;
-            this.lxLedControl9.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.lxLedControl9.BevelRate = 0.1F;
-            this.lxLedControl9.BorderColor = System.Drawing.Color.Lavender;
-            this.lxLedControl9.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.lxLedControl9.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.lxLedControl9.ForeColor = System.Drawing.Color.Black;
-            this.lxLedControl9.HighlightOpaque = ((byte)(20));
-            this.lxLedControl9.Location = new System.Drawing.Point(702, 118);
-            this.lxLedControl9.Name = "lxLedControl9";
-            this.lxLedControl9.RoundCorner = true;
-            this.lxLedControl9.SegmentIntervalRatio = 50;
-            this.lxLedControl9.ShowHighlight = true;
-            this.lxLedControl9.Size = new System.Drawing.Size(183, 35);
-            this.lxLedControl9.TabIndex = 35;
-            this.lxLedControl9.Text = "0";
-            this.lxLedControl9.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.lxLedControl9.TotalCharCount = 10;
-            // 
-            // lxLedControl10
-            // 
-            this.lxLedControl10.BackColor = System.Drawing.Color.Transparent;
-            this.lxLedControl10.BackColor_1 = System.Drawing.Color.Transparent;
-            this.lxLedControl10.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.lxLedControl10.BevelRate = 0.1F;
-            this.lxLedControl10.BorderColor = System.Drawing.Color.Lavender;
-            this.lxLedControl10.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.lxLedControl10.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.lxLedControl10.ForeColor = System.Drawing.Color.Black;
-            this.lxLedControl10.HighlightOpaque = ((byte)(20));
-            this.lxLedControl10.Location = new System.Drawing.Point(496, 35);
-            this.lxLedControl10.Name = "lxLedControl10";
-            this.lxLedControl10.RoundCorner = true;
-            this.lxLedControl10.SegmentIntervalRatio = 50;
-            this.lxLedControl10.ShowHighlight = true;
-            this.lxLedControl10.Size = new System.Drawing.Size(140, 50);
-            this.lxLedControl10.TabIndex = 34;
-            this.lxLedControl10.Text = "0";
-            this.lxLedControl10.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            // 
-            // lxLedControl11
-            // 
-            this.lxLedControl11.BackColor = System.Drawing.Color.Transparent;
-            this.lxLedControl11.BackColor_1 = System.Drawing.Color.Transparent;
-            this.lxLedControl11.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.lxLedControl11.BevelRate = 0.1F;
-            this.lxLedControl11.BorderColor = System.Drawing.Color.Lavender;
-            this.lxLedControl11.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.lxLedControl11.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.lxLedControl11.ForeColor = System.Drawing.Color.Black;
-            this.lxLedControl11.HighlightOpaque = ((byte)(20));
-            this.lxLedControl11.Location = new System.Drawing.Point(497, 103);
-            this.lxLedControl11.Name = "lxLedControl11";
-            this.lxLedControl11.RoundCorner = true;
-            this.lxLedControl11.SegmentIntervalRatio = 50;
-            this.lxLedControl11.ShowHighlight = true;
-            this.lxLedControl11.Size = new System.Drawing.Size(140, 50);
-            this.lxLedControl11.TabIndex = 33;
-            this.lxLedControl11.Text = "0";
-            this.lxLedControl11.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            // 
-            // lxLedControl12
-            // 
-            this.lxLedControl12.BackColor = System.Drawing.Color.Transparent;
-            this.lxLedControl12.BackColor_1 = System.Drawing.Color.Transparent;
-            this.lxLedControl12.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.lxLedControl12.BevelRate = 0.1F;
-            this.lxLedControl12.BorderColor = System.Drawing.Color.Lavender;
-            this.lxLedControl12.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.lxLedControl12.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.lxLedControl12.ForeColor = System.Drawing.Color.Black;
-            this.lxLedControl12.HighlightOpaque = ((byte)(20));
-            this.lxLedControl12.Location = new System.Drawing.Point(702, 35);
-            this.lxLedControl12.Name = "lxLedControl12";
-            this.lxLedControl12.RoundCorner = true;
-            this.lxLedControl12.SegmentIntervalRatio = 50;
-            this.lxLedControl12.ShowHighlight = true;
-            this.lxLedControl12.Size = new System.Drawing.Size(140, 50);
-            this.lxLedControl12.TabIndex = 32;
-            this.lxLedControl12.Text = "0";
-            this.lxLedControl12.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            // 
             // label79
             // 
             this.label79.AutoSize = true;
@@ -7674,27 +7318,6 @@ namespace Track_ShuttleRun
             this.label83.Size = new System.Drawing.Size(149, 12);
             this.label83.TabIndex = 26;
             this.label83.Text = "已盘存的标签总数量(个)：";
-            // 
-            // lxLedControl13
-            // 
-            this.lxLedControl13.BackColor = System.Drawing.Color.Transparent;
-            this.lxLedControl13.BackColor_1 = System.Drawing.Color.Transparent;
-            this.lxLedControl13.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.lxLedControl13.BevelRate = 0.1F;
-            this.lxLedControl13.BorderColor = System.Drawing.Color.Lavender;
-            this.lxLedControl13.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.lxLedControl13.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.lxLedControl13.ForeColor = System.Drawing.Color.Purple;
-            this.lxLedControl13.HighlightOpaque = ((byte)(20));
-            this.lxLedControl13.Location = new System.Drawing.Point(106, 35);
-            this.lxLedControl13.Name = "lxLedControl13";
-            this.lxLedControl13.RoundCorner = true;
-            this.lxLedControl13.SegmentIntervalRatio = 50;
-            this.lxLedControl13.ShowHighlight = true;
-            this.lxLedControl13.Size = new System.Drawing.Size(310, 118);
-            this.lxLedControl13.TabIndex = 21;
-            this.lxLedControl13.Text = "0";
-            this.lxLedControl13.TextAlignment = LxControl.LxLedControl.Alignment.Right;
             // 
             // listView1
             // 
@@ -7831,8 +7454,8 @@ namespace Track_ShuttleRun
             this.panel15.Controls.Add(this.lblUsia);
             this.panel15.Controls.Add(this.lblTanggalLahir);
             this.panel15.Controls.Add(this.btn_Ulangi);
-            this.panel15.Controls.Add(this.lblJabatan);
-            this.panel15.Controls.Add(this.lblNRP);
+            this.panel15.Controls.Add(this.lblAsalSekolah);
+            this.panel15.Controls.Add(this.lblNOPJurusan);
             this.panel15.Controls.Add(this.textBarId);
             this.panel15.Controls.Add(this.lblNama);
             this.panel15.Controls.Add(this.btnReconnect);
@@ -7935,29 +7558,29 @@ namespace Track_ShuttleRun
             this.btn_Ulangi.UseVisualStyleBackColor = true;
             this.btn_Ulangi.Click += new System.EventHandler(this.btn_Ulangi_Click);
             // 
-            // lblJabatan
+            // lblAsalSekolah
             // 
-            this.lblJabatan.AutoSize = true;
-            this.lblJabatan.BackColor = System.Drawing.Color.White;
-            this.lblJabatan.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJabatan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblJabatan.Location = new System.Drawing.Point(883, 444);
-            this.lblJabatan.Name = "lblJabatan";
-            this.lblJabatan.Size = new System.Drawing.Size(83, 29);
-            this.lblJabatan.TabIndex = 83;
-            this.lblJabatan.Text = "Jabatan";
+            this.lblAsalSekolah.AutoSize = true;
+            this.lblAsalSekolah.BackColor = System.Drawing.Color.White;
+            this.lblAsalSekolah.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAsalSekolah.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblAsalSekolah.Location = new System.Drawing.Point(883, 444);
+            this.lblAsalSekolah.Name = "lblAsalSekolah";
+            this.lblAsalSekolah.Size = new System.Drawing.Size(127, 29);
+            this.lblAsalSekolah.TabIndex = 83;
+            this.lblAsalSekolah.Text = "Asal Sekolah";
             // 
-            // lblNRP
+            // lblNOPJurusan
             // 
-            this.lblNRP.AutoSize = true;
-            this.lblNRP.BackColor = System.Drawing.Color.White;
-            this.lblNRP.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNRP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblNRP.Location = new System.Drawing.Point(1036, 229);
-            this.lblNRP.Name = "lblNRP";
-            this.lblNRP.Size = new System.Drawing.Size(86, 20);
-            this.lblNRP.TabIndex = 82;
-            this.lblNRP.Text = "NRP/KORPS";
+            this.lblNOPJurusan.AutoSize = true;
+            this.lblNOPJurusan.BackColor = System.Drawing.Color.White;
+            this.lblNOPJurusan.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNOPJurusan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblNOPJurusan.Location = new System.Drawing.Point(1036, 229);
+            this.lblNOPJurusan.Name = "lblNOPJurusan";
+            this.lblNOPJurusan.Size = new System.Drawing.Size(87, 20);
+            this.lblNOPJurusan.TabIndex = 82;
+            this.lblNOPJurusan.Text = "NOP/Jurusan";
             // 
             // textBarId
             // 
@@ -8060,15 +7683,6 @@ namespace Track_ShuttleRun
             this.ckClearOperationRec.Text = "Auto Clear";
             this.ckClearOperationRec.UseVisualStyleBackColor = true;
             // 
-            // lrtxtLog
-            // 
-            this.lrtxtLog.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lrtxtLog.Location = new System.Drawing.Point(0, 24);
-            this.lrtxtLog.Name = "lrtxtLog";
-            this.lrtxtLog.Size = new System.Drawing.Size(633, 41);
-            this.lrtxtLog.TabIndex = 1;
-            this.lrtxtLog.Text = "";
-            // 
             // ckDisplayLog
             // 
             this.ckDisplayLog.AutoSize = true;
@@ -8098,11 +7712,12 @@ namespace Track_ShuttleRun
             this.Label_No_ShuttleRun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.Label_No_ShuttleRun.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_No_ShuttleRun.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_No_ShuttleRun.Location = new System.Drawing.Point(168, 55);
+            this.Label_No_ShuttleRun.Location = new System.Drawing.Point(215, 61);
             this.Label_No_ShuttleRun.Name = "Label_No_ShuttleRun";
             this.Label_No_ShuttleRun.Size = new System.Drawing.Size(467, 56);
             this.Label_No_ShuttleRun.TabIndex = 65;
             this.Label_No_ShuttleRun.Text = "Shuttle Run Station";
+            this.Label_No_ShuttleRun.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Label_Timer
             // 
@@ -8205,6 +7820,392 @@ namespace Track_ShuttleRun
             // 
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lrtxtLog
+            // 
+            this.lrtxtLog.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lrtxtLog.Location = new System.Drawing.Point(0, 24);
+            this.lrtxtLog.Name = "lrtxtLog";
+            this.lrtxtLog.Size = new System.Drawing.Size(633, 41);
+            this.lrtxtLog.TabIndex = 1;
+            this.lrtxtLog.Text = "";
+            // 
+            // ipIpServer
+            // 
+            this.ipIpServer.IpAddressStr = "";
+            this.ipIpServer.Location = new System.Drawing.Point(113, 25);
+            this.ipIpServer.Name = "ipIpServer";
+            this.ipIpServer.Size = new System.Drawing.Size(122, 21);
+            this.ipIpServer.TabIndex = 0;
+            // 
+            // htxtReadId
+            // 
+            this.htxtReadId.Location = new System.Drawing.Point(113, 25);
+            this.htxtReadId.Name = "htxtReadId";
+            this.htxtReadId.Size = new System.Drawing.Size(122, 20);
+            this.htxtReadId.TabIndex = 2;
+            this.htxtReadId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // htbGetIdentifier
+            // 
+            this.htbGetIdentifier.Location = new System.Drawing.Point(13, 22);
+            this.htbGetIdentifier.Name = "htbGetIdentifier";
+            this.htbGetIdentifier.ReadOnly = true;
+            this.htbGetIdentifier.Size = new System.Drawing.Size(228, 20);
+            this.htbGetIdentifier.TabIndex = 13;
+            this.htbGetIdentifier.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // htbSetIdentifier
+            // 
+            this.htbSetIdentifier.Location = new System.Drawing.Point(13, 61);
+            this.htbSetIdentifier.Name = "htbSetIdentifier";
+            this.htbSetIdentifier.Size = new System.Drawing.Size(228, 20);
+            this.htbSetIdentifier.TabIndex = 12;
+            this.htbSetIdentifier.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // led_total_tagreads
+            // 
+            this.led_total_tagreads.BackColor = System.Drawing.Color.Transparent;
+            this.led_total_tagreads.BackColor_1 = System.Drawing.Color.Transparent;
+            this.led_total_tagreads.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.led_total_tagreads.BevelRate = 0.1F;
+            this.led_total_tagreads.BorderColor = System.Drawing.Color.Lavender;
+            this.led_total_tagreads.BorderWidth = 3;
+            this.led_total_tagreads.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.led_total_tagreads.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.led_total_tagreads.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.led_total_tagreads.HighlightOpaque = ((byte)(20));
+            this.led_total_tagreads.Location = new System.Drawing.Point(6, 35);
+            this.led_total_tagreads.Name = "led_total_tagreads";
+            this.led_total_tagreads.RoundCorner = true;
+            this.led_total_tagreads.SegmentIntervalRatio = 50;
+            this.led_total_tagreads.ShowHighlight = true;
+            this.led_total_tagreads.Size = new System.Drawing.Size(238, 89);
+            this.led_total_tagreads.TabIndex = 21;
+            this.led_total_tagreads.Text = "0";
+            this.led_total_tagreads.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            // 
+            // led_totalread_count
+            // 
+            this.led_totalread_count.BackColor = System.Drawing.Color.Transparent;
+            this.led_totalread_count.BackColor_1 = System.Drawing.Color.Transparent;
+            this.led_totalread_count.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.led_totalread_count.BevelRate = 0.1F;
+            this.led_totalread_count.BorderColor = System.Drawing.Color.Lavender;
+            this.led_totalread_count.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.led_totalread_count.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.led_totalread_count.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.led_totalread_count.HighlightOpaque = ((byte)(20));
+            this.led_totalread_count.Location = new System.Drawing.Point(386, 26);
+            this.led_totalread_count.Name = "led_totalread_count";
+            this.led_totalread_count.RoundCorner = true;
+            this.led_totalread_count.SegmentIntervalRatio = 50;
+            this.led_totalread_count.ShowHighlight = true;
+            this.led_totalread_count.Size = new System.Drawing.Size(252, 35);
+            this.led_totalread_count.TabIndex = 40;
+            this.led_totalread_count.Text = "0";
+            this.led_totalread_count.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.led_totalread_count.TotalCharCount = 14;
+            // 
+            // led_cmd_readrate
+            // 
+            this.led_cmd_readrate.BackColor = System.Drawing.Color.Transparent;
+            this.led_cmd_readrate.BackColor_1 = System.Drawing.Color.Transparent;
+            this.led_cmd_readrate.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.led_cmd_readrate.BevelRate = 0.1F;
+            this.led_cmd_readrate.BorderColor = System.Drawing.Color.Lavender;
+            this.led_cmd_readrate.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.led_cmd_readrate.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.led_cmd_readrate.ForeColor = System.Drawing.Color.Purple;
+            this.led_cmd_readrate.HighlightOpaque = ((byte)(20));
+            this.led_cmd_readrate.Location = new System.Drawing.Point(255, 26);
+            this.led_cmd_readrate.Name = "led_cmd_readrate";
+            this.led_cmd_readrate.RoundCorner = true;
+            this.led_cmd_readrate.SegmentIntervalRatio = 50;
+            this.led_cmd_readrate.ShowHighlight = true;
+            this.led_cmd_readrate.Size = new System.Drawing.Size(124, 37);
+            this.led_cmd_readrate.TabIndex = 34;
+            this.led_cmd_readrate.Text = "0";
+            this.led_cmd_readrate.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.led_cmd_readrate.TotalCharCount = 6;
+            // 
+            // led_cmd_execute_duration
+            // 
+            this.led_cmd_execute_duration.BackColor = System.Drawing.Color.Transparent;
+            this.led_cmd_execute_duration.BackColor_1 = System.Drawing.Color.Transparent;
+            this.led_cmd_execute_duration.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.led_cmd_execute_duration.BevelRate = 0.1F;
+            this.led_cmd_execute_duration.BorderColor = System.Drawing.Color.Lavender;
+            this.led_cmd_execute_duration.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.led_cmd_execute_duration.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.led_cmd_execute_duration.ForeColor = System.Drawing.Color.Purple;
+            this.led_cmd_execute_duration.HighlightOpaque = ((byte)(20));
+            this.led_cmd_execute_duration.Location = new System.Drawing.Point(255, 90);
+            this.led_cmd_execute_duration.Name = "led_cmd_execute_duration";
+            this.led_cmd_execute_duration.RoundCorner = true;
+            this.led_cmd_execute_duration.SegmentIntervalRatio = 50;
+            this.led_cmd_execute_duration.ShowHighlight = true;
+            this.led_cmd_execute_duration.Size = new System.Drawing.Size(121, 34);
+            this.led_cmd_execute_duration.TabIndex = 33;
+            this.led_cmd_execute_duration.Text = "0";
+            this.led_cmd_execute_duration.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.led_cmd_execute_duration.TotalCharCount = 6;
+            // 
+            // ledFast_total_execute_time
+            // 
+            this.ledFast_total_execute_time.BackColor = System.Drawing.Color.Transparent;
+            this.ledFast_total_execute_time.BackColor_1 = System.Drawing.Color.Transparent;
+            this.ledFast_total_execute_time.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.ledFast_total_execute_time.BevelRate = 0.1F;
+            this.ledFast_total_execute_time.BorderColor = System.Drawing.Color.Lavender;
+            this.ledFast_total_execute_time.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.ledFast_total_execute_time.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.ledFast_total_execute_time.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ledFast_total_execute_time.HighlightOpaque = ((byte)(20));
+            this.ledFast_total_execute_time.Location = new System.Drawing.Point(386, 90);
+            this.ledFast_total_execute_time.Name = "ledFast_total_execute_time";
+            this.ledFast_total_execute_time.RoundCorner = true;
+            this.ledFast_total_execute_time.SegmentIntervalRatio = 50;
+            this.ledFast_total_execute_time.ShowHighlight = true;
+            this.ledFast_total_execute_time.Size = new System.Drawing.Size(252, 35);
+            this.ledFast_total_execute_time.TabIndex = 35;
+            this.ledFast_total_execute_time.Text = "0";
+            this.ledFast_total_execute_time.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.ledFast_total_execute_time.TotalCharCount = 14;
+            // 
+            // htxtKillPwd
+            // 
+            this.htxtKillPwd.Location = new System.Drawing.Point(421, 17);
+            this.htxtKillPwd.Name = "htxtKillPwd";
+            this.htxtKillPwd.Size = new System.Drawing.Size(120, 21);
+            this.htxtKillPwd.TabIndex = 13;
+            // 
+            // htxtLockPwd
+            // 
+            this.htxtLockPwd.Location = new System.Drawing.Point(737, 52);
+            this.htxtLockPwd.Name = "htxtLockPwd";
+            this.htxtLockPwd.Size = new System.Drawing.Size(120, 21);
+            this.htxtLockPwd.TabIndex = 12;
+            // 
+            // hexTb_accessPw
+            // 
+            this.hexTb_accessPw.Location = new System.Drawing.Point(421, 23);
+            this.hexTb_accessPw.Name = "hexTb_accessPw";
+            this.hexTb_accessPw.Size = new System.Drawing.Size(105, 21);
+            this.hexTb_accessPw.TabIndex = 13;
+            this.hexTb_accessPw.Text = "00 00 00 00";
+            // 
+            // hexTb_WriteData
+            // 
+            this.hexTb_WriteData.Location = new System.Drawing.Point(135, 58);
+            this.hexTb_WriteData.Name = "hexTb_WriteData";
+            this.hexTb_WriteData.Size = new System.Drawing.Size(572, 21);
+            this.hexTb_WriteData.TabIndex = 10;
+            // 
+            // hexTextBox_mask
+            // 
+            this.hexTextBox_mask.Location = new System.Drawing.Point(155, 94);
+            this.hexTextBox_mask.Name = "hexTextBox_mask";
+            this.hexTextBox_mask.Size = new System.Drawing.Size(432, 21);
+            this.hexTextBox_mask.TabIndex = 18;
+            this.hexTextBox_mask.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // htxtReadUID
+            // 
+            this.htxtReadUID.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold);
+            this.htxtReadUID.Location = new System.Drawing.Point(117, 11);
+            this.htxtReadUID.Name = "htxtReadUID";
+            this.htxtReadUID.ReadOnly = true;
+            this.htxtReadUID.Size = new System.Drawing.Size(195, 21);
+            this.htxtReadUID.TabIndex = 6;
+            this.htxtReadUID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // htxtWriteData18000
+            // 
+            this.htxtWriteData18000.Location = new System.Drawing.Point(117, 250);
+            this.htxtWriteData18000.Multiline = true;
+            this.htxtWriteData18000.Name = "htxtWriteData18000";
+            this.htxtWriteData18000.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.htxtWriteData18000.Size = new System.Drawing.Size(383, 158);
+            this.htxtWriteData18000.TabIndex = 9;
+            // 
+            // htxtReadData18000
+            // 
+            this.htxtReadData18000.Location = new System.Drawing.Point(117, 52);
+            this.htxtReadData18000.Multiline = true;
+            this.htxtReadData18000.Name = "htxtReadData18000";
+            this.htxtReadData18000.ReadOnly = true;
+            this.htxtReadData18000.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.htxtReadData18000.Size = new System.Drawing.Size(383, 133);
+            this.htxtReadData18000.TabIndex = 11;
+            // 
+            // htxtWriteStartAdd
+            // 
+            this.htxtWriteStartAdd.Location = new System.Drawing.Point(117, 192);
+            this.htxtWriteStartAdd.MaxLength = 2;
+            this.htxtWriteStartAdd.Name = "htxtWriteStartAdd";
+            this.htxtWriteStartAdd.Size = new System.Drawing.Size(39, 20);
+            this.htxtWriteStartAdd.TabIndex = 8;
+            this.htxtWriteStartAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // htxtReadStartAdd
+            // 
+            this.htxtReadStartAdd.Location = new System.Drawing.Point(117, 19);
+            this.htxtReadStartAdd.MaxLength = 2;
+            this.htxtReadStartAdd.Name = "htxtReadStartAdd";
+            this.htxtReadStartAdd.Size = new System.Drawing.Size(39, 20);
+            this.htxtReadStartAdd.TabIndex = 7;
+            this.htxtReadStartAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // htxtQueryAdd
+            // 
+            this.htxtQueryAdd.Location = new System.Drawing.Point(210, 58);
+            this.htxtQueryAdd.MaxLength = 2;
+            this.htxtQueryAdd.Name = "htxtQueryAdd";
+            this.htxtQueryAdd.Size = new System.Drawing.Size(39, 20);
+            this.htxtQueryAdd.TabIndex = 8;
+            this.htxtQueryAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // htxtLockAdd
+            // 
+            this.htxtLockAdd.Location = new System.Drawing.Point(210, 25);
+            this.htxtLockAdd.MaxLength = 2;
+            this.htxtLockAdd.Name = "htxtLockAdd";
+            this.htxtLockAdd.Size = new System.Drawing.Size(39, 20);
+            this.htxtLockAdd.TabIndex = 8;
+            this.htxtLockAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lrtxtDataTran
+            // 
+            this.lrtxtDataTran.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lrtxtDataTran.Location = new System.Drawing.Point(0, 0);
+            this.lrtxtDataTran.Name = "lrtxtDataTran";
+            this.lrtxtDataTran.Size = new System.Drawing.Size(1554, 565);
+            this.lrtxtDataTran.TabIndex = 0;
+            this.lrtxtDataTran.Text = "";
+            this.lrtxtDataTran.DoubleClick += new System.EventHandler(this.lrtxtDataTran_DoubleClick);
+            // 
+            // htxtSendData
+            // 
+            this.htxtSendData.Location = new System.Drawing.Point(98, 35);
+            this.htxtSendData.Name = "htxtSendData";
+            this.htxtSendData.Size = new System.Drawing.Size(515, 20);
+            this.htxtSendData.TabIndex = 2;
+            this.htxtSendData.Leave += new System.EventHandler(this.htxtSendData_Leave);
+            // 
+            // htxtCheckData
+            // 
+            this.htxtCheckData.Location = new System.Drawing.Point(694, 35);
+            this.htxtCheckData.Name = "htxtCheckData";
+            this.htxtCheckData.ReadOnly = true;
+            this.htxtCheckData.Size = new System.Drawing.Size(47, 20);
+            this.htxtCheckData.TabIndex = 4;
+            // 
+            // lxLedControl9
+            // 
+            this.lxLedControl9.BackColor = System.Drawing.Color.Transparent;
+            this.lxLedControl9.BackColor_1 = System.Drawing.Color.Transparent;
+            this.lxLedControl9.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.lxLedControl9.BevelRate = 0.1F;
+            this.lxLedControl9.BorderColor = System.Drawing.Color.Lavender;
+            this.lxLedControl9.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.lxLedControl9.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.lxLedControl9.ForeColor = System.Drawing.Color.Black;
+            this.lxLedControl9.HighlightOpaque = ((byte)(20));
+            this.lxLedControl9.Location = new System.Drawing.Point(702, 118);
+            this.lxLedControl9.Name = "lxLedControl9";
+            this.lxLedControl9.RoundCorner = true;
+            this.lxLedControl9.SegmentIntervalRatio = 50;
+            this.lxLedControl9.ShowHighlight = true;
+            this.lxLedControl9.Size = new System.Drawing.Size(183, 35);
+            this.lxLedControl9.TabIndex = 35;
+            this.lxLedControl9.Text = "0";
+            this.lxLedControl9.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.lxLedControl9.TotalCharCount = 10;
+            // 
+            // lxLedControl10
+            // 
+            this.lxLedControl10.BackColor = System.Drawing.Color.Transparent;
+            this.lxLedControl10.BackColor_1 = System.Drawing.Color.Transparent;
+            this.lxLedControl10.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.lxLedControl10.BevelRate = 0.1F;
+            this.lxLedControl10.BorderColor = System.Drawing.Color.Lavender;
+            this.lxLedControl10.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.lxLedControl10.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.lxLedControl10.ForeColor = System.Drawing.Color.Black;
+            this.lxLedControl10.HighlightOpaque = ((byte)(20));
+            this.lxLedControl10.Location = new System.Drawing.Point(496, 35);
+            this.lxLedControl10.Name = "lxLedControl10";
+            this.lxLedControl10.RoundCorner = true;
+            this.lxLedControl10.SegmentIntervalRatio = 50;
+            this.lxLedControl10.ShowHighlight = true;
+            this.lxLedControl10.Size = new System.Drawing.Size(140, 50);
+            this.lxLedControl10.TabIndex = 34;
+            this.lxLedControl10.Text = "0";
+            this.lxLedControl10.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            // 
+            // lxLedControl11
+            // 
+            this.lxLedControl11.BackColor = System.Drawing.Color.Transparent;
+            this.lxLedControl11.BackColor_1 = System.Drawing.Color.Transparent;
+            this.lxLedControl11.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.lxLedControl11.BevelRate = 0.1F;
+            this.lxLedControl11.BorderColor = System.Drawing.Color.Lavender;
+            this.lxLedControl11.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.lxLedControl11.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.lxLedControl11.ForeColor = System.Drawing.Color.Black;
+            this.lxLedControl11.HighlightOpaque = ((byte)(20));
+            this.lxLedControl11.Location = new System.Drawing.Point(497, 103);
+            this.lxLedControl11.Name = "lxLedControl11";
+            this.lxLedControl11.RoundCorner = true;
+            this.lxLedControl11.SegmentIntervalRatio = 50;
+            this.lxLedControl11.ShowHighlight = true;
+            this.lxLedControl11.Size = new System.Drawing.Size(140, 50);
+            this.lxLedControl11.TabIndex = 33;
+            this.lxLedControl11.Text = "0";
+            this.lxLedControl11.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            // 
+            // lxLedControl12
+            // 
+            this.lxLedControl12.BackColor = System.Drawing.Color.Transparent;
+            this.lxLedControl12.BackColor_1 = System.Drawing.Color.Transparent;
+            this.lxLedControl12.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.lxLedControl12.BevelRate = 0.1F;
+            this.lxLedControl12.BorderColor = System.Drawing.Color.Lavender;
+            this.lxLedControl12.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.lxLedControl12.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.lxLedControl12.ForeColor = System.Drawing.Color.Black;
+            this.lxLedControl12.HighlightOpaque = ((byte)(20));
+            this.lxLedControl12.Location = new System.Drawing.Point(702, 35);
+            this.lxLedControl12.Name = "lxLedControl12";
+            this.lxLedControl12.RoundCorner = true;
+            this.lxLedControl12.SegmentIntervalRatio = 50;
+            this.lxLedControl12.ShowHighlight = true;
+            this.lxLedControl12.Size = new System.Drawing.Size(140, 50);
+            this.lxLedControl12.TabIndex = 32;
+            this.lxLedControl12.Text = "0";
+            this.lxLedControl12.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            // 
+            // lxLedControl13
+            // 
+            this.lxLedControl13.BackColor = System.Drawing.Color.Transparent;
+            this.lxLedControl13.BackColor_1 = System.Drawing.Color.Transparent;
+            this.lxLedControl13.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.lxLedControl13.BevelRate = 0.1F;
+            this.lxLedControl13.BorderColor = System.Drawing.Color.Lavender;
+            this.lxLedControl13.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.lxLedControl13.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.lxLedControl13.ForeColor = System.Drawing.Color.Purple;
+            this.lxLedControl13.HighlightOpaque = ((byte)(20));
+            this.lxLedControl13.Location = new System.Drawing.Point(106, 35);
+            this.lxLedControl13.Name = "lxLedControl13";
+            this.lxLedControl13.RoundCorner = true;
+            this.lxLedControl13.SegmentIntervalRatio = 50;
+            this.lxLedControl13.ShowHighlight = true;
+            this.lxLedControl13.Size = new System.Drawing.Size(310, 118);
+            this.lxLedControl13.TabIndex = 21;
+            this.lxLedControl13.Text = "0";
+            this.lxLedControl13.TextAlignment = LxControl.LxLedControl.Alignment.Right;
             // 
             // lxLedControl14
             // 
@@ -8429,11 +8430,6 @@ namespace Track_ShuttleRun
             ((System.ComponentModel.ISupportInitialize)(this.dgv_fast_inv_tags)).EndInit();
             this.groupBox25.ResumeLayout(false);
             this.groupBox25.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.led_total_tagreads)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.led_totalread_count)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.led_cmd_readrate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.led_cmd_execute_duration)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ledFast_total_execute_time)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.grb_inventory_type.ResumeLayout(false);
             this.grb_inventory_type.PerformLayout();
@@ -8523,11 +8519,6 @@ namespace Track_ShuttleRun
             this.panel7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl13)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFPImg)).EndInit();
@@ -8536,6 +8527,16 @@ namespace Track_ShuttleRun
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.led_total_tagreads)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.led_totalread_count)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.led_cmd_readrate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.led_cmd_execute_duration)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ledFast_total_execute_time)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lxLedControl16)).EndInit();
@@ -9202,8 +9203,8 @@ namespace Track_ShuttleRun
         private Label lblUsia;
         private Label lblTanggalLahir;
         private Button btn_Ulangi;
-        private Label lblJabatan;
-        private Label lblNRP;
+        private Label lblAsalSekolah;
+        private Label lblNOPJurusan;
         private Label textBarId;
         private Label lblNama;
         private Button btnReconnect;

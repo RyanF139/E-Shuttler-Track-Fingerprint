@@ -518,9 +518,9 @@ namespace Track_ShuttleRun
                     int DateNow = int.Parse(DateTime.Now.ToString("yyyyMMdd"));
 
                     lblNama.Text = (nama + "/" + pangkat);
-                    lblNRP.Text = (nrp + "/" + korps);
+                    lblNOPJurusan.Text = (nrp + "/" + korps);
                     lblTanggalLahir.Text = tanggal_lahir;
-                    lblJabatan.Text = jabatan;
+                    lblAsalSekolah.Text = jabatan;
                     lblUsia.Text = ((DateNow - tanggalLahir) / 10000).ToString();
                     lblNamaTestor.Text = namaTestor;
                     Label_NoPeserta.Text = no_Peserta;
@@ -8747,12 +8747,12 @@ namespace Track_ShuttleRun
         {
             btn_Ulangi.Hide();
             lblNama.Text = "";
-            lblNRP.Text = "";
+            lblNOPJurusan.Text = "";
             lblUsia.Text = "";
             icon_Female.Hide();
             icon_Male.Hide();
             lblTanggalLahir.Text = "";
-            lblJabatan.Text = "";
+            lblAsalSekolah.Text = "";
             lblNamaTestor.Text = "";
             textBarId.Text ="Finnger ID";
             picFPImg.Image = null;
