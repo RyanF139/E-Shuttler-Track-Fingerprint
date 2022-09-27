@@ -201,16 +201,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon ShuttleRun.ico" />
-    <Content Include="Sound\countdown shuttle run.wav">
+    <Content Include="Sound\Putaran1.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Sound\counting shuttle run.wav">
+    <Content Include="Sound\Putaran2.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Sound\Finish-1.wav">
+    <Content Include="Sound\Putaran3.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Sound\Finish.wav">
+    <Content Include="Sound\Start.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Sound\wrong track.wav">

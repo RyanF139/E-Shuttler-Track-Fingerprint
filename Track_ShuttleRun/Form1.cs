@@ -4976,29 +4976,37 @@ namespace Track_ShuttleRun
             var myPlayer = new System.Media.SoundPlayer();
             string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
             // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
-            myPlayer.SoundLocation = dir + @"\Sound\countdown shuttle run.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\Start.wav";
             myPlayer.Play();
-            await Task.Delay(4000);
+            await Task.Delay(5000);
             isStartTime = true;
         }
 
-        public void PlaySoundFinish()
+        public void PlaySoundPutaran1()
         {
             var myPlayer = new System.Media.SoundPlayer();
             string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
             // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
-            myPlayer.SoundLocation = dir + @"\Sound\Finish-1.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\Putaran1.wav";
             myPlayer.Play();
         }
 
-        public void PlaySoundCounter()
+        public void PlaySoundPutaran2()
         {
             var myPlayer = new System.Media.SoundPlayer();
             string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
             // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
-            myPlayer.SoundLocation = dir + @"\Sound\counting shuttle run.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\Putaran2.wav";
             myPlayer.Play();
+        }
 
+        public void PlaySoundPutaran3()
+        {
+            var myPlayer = new System.Media.SoundPlayer();
+            string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
+            // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\Putaran3.wav";
+            myPlayer.Play();
         }
 
         public void PlaySoundWrongTrack()
@@ -6525,7 +6533,7 @@ namespace Track_ShuttleRun
                                                 string waktu_p1 = history.Rows[0]["putaran1"].ToString();*/
                                                 Label_Putaran1.Text = waktu;
 
-                                                PlaySoundCounter();
+                                                PlaySoundPutaran1();
                                             }
                                             else if (Putaran2 == "0")
                                             {
@@ -6543,7 +6551,7 @@ namespace Track_ShuttleRun
                                                  string waktu_p2 = history.Rows[0]["putaran2"].ToString();*/
                                                 Label_Putaran2.Text = waktu;
 
-                                                PlaySoundCounter();
+                                                PlaySoundPutaran2();
 
                                             }
                                             else if (Putaran3 == "0")
@@ -6572,7 +6580,7 @@ namespace Track_ShuttleRun
                                                 Label_Putaran3.Text = waktu;
                                                 stopwatch.Stop();
                                                 timer1.Stop();
-                                                PlaySoundFinish();
+                                                PlaySoundPutaran3();
 
                                                 postDataNilai(waktu, noPeserta, idtestor);
 
@@ -6681,7 +6689,7 @@ namespace Track_ShuttleRun
                                                 string waktu_p1 = history.Rows[0]["putaran1"].ToString();*/
                                                 Label_Putaran1.Text = waktu;
 
-                                                PlaySoundCounter();
+                                                PlaySoundPutaran1();
                                             }
                                             else if (Putaran2 == "0")
                                             {
@@ -6699,7 +6707,7 @@ namespace Track_ShuttleRun
                                                  string waktu_p2 = history.Rows[0]["putaran2"].ToString();*/
                                                 Label_Putaran2.Text = waktu;
 
-                                                PlaySoundCounter();
+                                                PlaySoundPutaran2();
 
                                             }
                                             else if (Putaran3 == "0")
@@ -6728,7 +6736,7 @@ namespace Track_ShuttleRun
                                                 Label_Putaran3.Text = waktu;
                                                 stopwatch.Stop();
                                                 timer1.Stop();
-                                                PlaySoundFinish();
+                                                PlaySoundPutaran3();
 
                                                 postDataNilai(waktu, noPeserta, idtestor);
 
