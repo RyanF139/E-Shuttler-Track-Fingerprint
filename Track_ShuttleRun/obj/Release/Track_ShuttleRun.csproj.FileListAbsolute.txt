@@ -1,3 +1,7 @@
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Release\Sound\Putaran1.wav
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Release\Sound\Putaran2.wav
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Release\Sound\Putaran3.wav
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Release\Sound\Start.wav
 C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Release\Sound\wrong track.wav
 C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Release\Track_ShuttleRun.exe.config
 C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Release\Track_ShuttleRun.exe
@@ -50,7 +54,3 @@ C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shu
 C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\obj\Release\Track_ShuttleRun.csproj.CopyComplete
 C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\obj\Release\Track_ShuttleRun.exe
 C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\obj\Release\Track_ShuttleRun.pdb
-C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Release\Sound\Putaran1.wav
-C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Release\Sound\Putaran2.wav
-C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Release\Sound\Putaran3.wav
-C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Release\Sound\Start.wav
