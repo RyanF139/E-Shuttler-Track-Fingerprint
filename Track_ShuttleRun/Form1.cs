@@ -543,8 +543,7 @@ namespace Track_ShuttleRun
                     string Cek = "select * from history where no_peserta = '" + no_Peserta + "' limit 1";
                     DataTable cek = new Connect().getTable(Cek);
                     if (cek.Rows.Count == 0)
-                    {
-                        MessageBox.Show(StatusStartPosisi.ToString());
+                    {                        
                         if (StatusStartPosisi)
                         {
 
@@ -561,8 +560,7 @@ namespace Track_ShuttleRun
                             
                         }
                         else if (!StatusStartPosisi)
-                        {
-                            MessageBox.Show("Kiri");
+                        {                            
 
                             string InsertHistoryAwal = "insert into history_track (no_track,antena,barcode,no_rfid,waktu) values ('" + Track + "','" + 5 + "','" + fid + "','" + 0 + "','" + 0 + "')";
                             new Connect().execute(InsertHistoryAwal);
