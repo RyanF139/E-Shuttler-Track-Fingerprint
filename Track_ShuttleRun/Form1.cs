@@ -6774,9 +6774,9 @@ namespace Track_ShuttleRun
 
                                                  string waktu_p3 = history.Rows[0]["putaran3"].ToString();*/
                                                 Label_Putaran3.Text = waktu;
-                                                stopwatch.Stop();
-                                                timer1.Stop();
                                                 PlaySoundPutaran3();
+                                                stopwatch.Stop();
+                                                timer1.Stop();                                                
 
                                                 postDataNilai(waktu, noPeserta, idtestor);
 
