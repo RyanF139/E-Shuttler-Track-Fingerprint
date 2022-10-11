@@ -547,7 +547,6 @@ namespace Track_ShuttleRun
                         if (StatusStartPosisi)
                         {
 
-                            MessageBox.Show("Kanan");
                             string InsertHistoryAwal = "insert into history_track (no_track,antena,barcode,no_rfid,waktu) values ('" + Track + "','" + 0 + "','" + fid + "','" + 0 + "','" + 0 + "')";
                             new Connect().execute(InsertHistoryAwal);
 
@@ -4998,7 +4997,7 @@ namespace Track_ShuttleRun
             // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
             myPlayer.SoundLocation = dir + @"\Sound\Start.wav";
             myPlayer.Play();
-            await Task.Delay(6000);
+            await Task.Delay(5300);
             isStartTime = true;
         }
 
