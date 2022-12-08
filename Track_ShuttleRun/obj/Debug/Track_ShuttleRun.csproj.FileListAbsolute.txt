@@ -99,3 +99,8 @@ C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shu
 C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Debug\System.Memory.xml
 C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\obj\Debug\Track_ShuttleRun.exe.config
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Debug\Sound\Putaran1.wav
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Debug\Sound\Putaran2.wav
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Debug\Sound\Putaran3.wav
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Debug\Sound\Start.wav
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_Fingerprint\Track_ShuttleRun\bin\Debug\Sound\wrong track.wav

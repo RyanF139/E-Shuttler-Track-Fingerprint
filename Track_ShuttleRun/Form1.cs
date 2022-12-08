@@ -150,6 +150,7 @@ namespace Track_ShuttleRun
 
         public string FunctioWrong = System.Configuration.ConfigurationManager.AppSettings["FunctionSoundWrong"];
         private bool StatusStartPosisi;
+        string pesertaid;
 
         #region FindResource
         ResourceManager LocRM;
@@ -242,7 +243,7 @@ namespace Track_ShuttleRun
         {
             string url_AFIS = System.Configuration.ConfigurationManager.AppSettings["SERVER_API_AFIS"];
             //MessageBox.Show(seleksiID);
-            string route = "/api/v2/fingerprint?seleksiid="+seleksiID;
+            string route = "/api/v2/fingerprint?seleksiid=680";// + seleksiID;
             return httpRequest.execReturnList(url_AFIS + route, new Dictionary<string, object>(), new Dictionary<string, object>(), HttpRequest.METHOD_GET);
         }
 
@@ -352,7 +353,7 @@ namespace Track_ShuttleRun
                 bIdentify = true;
                 string message = "Please press your finger!";
                 //showMessage("Scan Finger Peserta", Color.FromArgb(243, 246, 249));
-                Console.WriteLine(message);
+                //Console.WriteLine(message);
             }
             catch (Exception e)
             {
@@ -487,6 +488,7 @@ namespace Track_ShuttleRun
 
             try
             {
+                Console.WriteLine(fid);
                 string url = System.Configuration.ConfigurationManager.AppSettings["SERVER_API"];
                 string route = "/api/v2/garjas/peserta?fingerid=" + fid;
                 string GET_Data_Peserta = url + route;
@@ -514,6 +516,8 @@ namespace Track_ShuttleRun
                     string Track = System.Configuration.ConfigurationManager.AppSettings["NoTrack"];
                     string no_Peserta = data["id"].ToString();
                     string jenisKelamin = data["jenis_kelamin"].ToString();
+                    pesertaid = no_Peserta;
+                    string test = data["nomor_test"].ToString();
 
                     Console.WriteLine(jenisKelamin);
 
@@ -528,7 +532,7 @@ namespace Track_ShuttleRun
                     lblAsalSekolah.Text = jabatan;
                     lblUsia.Text = ((DateNow - tanggalLahir) / 10000).ToString();
                     lblNamaTestor.Text = namaTestor;
-                    Label_NoPeserta.Text = no_Peserta;
+                    Label_NoPeserta.Text = test;
                     
 
                     if (jenisKelamin == "PRIA")
@@ -618,13 +622,23 @@ namespace Track_ShuttleRun
 
             if (passedInArgs.Length > 1)
             {
-                idTestor = passedInArgs[1];                
+                idTestor = passedInArgs[1];
                 namaTestor = passedInArgs[2];
                 seleksiID = passedInArgs[3];
                 //MessageBox.Show(idTestor);
             }
 
-            
+
+
+            /*if (passedInArgs.Length > 1)
+            {
+                idTestor = "123456";
+                namaTestor = "Testor1";
+                seleksiID = "680";
+                //MessageBox.Show(idTestor);
+            }*/
+
+
             btnStartKanan.PerformClick();
 
             //MessageBox.Show(seleksiID);
@@ -6605,7 +6619,7 @@ namespace Track_ShuttleRun
                                                 timer1.Stop();
                                                 
 
-                                                postDataNilai(waktu, noPeserta, idtestor);
+                                                postDataNilai(waktu, pesertaid, idtestor);
 
 
 
@@ -6775,7 +6789,7 @@ namespace Track_ShuttleRun
                                                 stopwatch.Stop();
                                                 timer1.Stop();                                                
 
-                                                postDataNilai(waktu, noPeserta, idtestor);
+                                                postDataNilai(waktu, pesertaid, idtestor);
 
 
 
@@ -6894,6 +6908,8 @@ namespace Track_ShuttleRun
             }
 
         }
+
+
 
         private void cmdSwitchAntG1()
         {
